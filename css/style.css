@@ -152,8 +152,13 @@ body{
         color: #fff;
         font-size: 70px;
         font-weight: bold;
-        position: absolute;
-        top: -60%;
-        left: 35px;
+        position: relative;
+        top: -50%;
+        left: 0;
+    }
+    .memory-game-blocks .game-block  img{
+        width: 90px;
+        height: 90px;
+        margin:0 auto;
     }
 }
