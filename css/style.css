@@ -4,8 +4,7 @@
 body{
     font-family: Arial, Tahoma, sans-serif;
 }
-.control-button,
-.winner-button{
+.control-button{
     position: fixed;
     top: 0;
     left: 0;
@@ -14,10 +13,6 @@ body{
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.7);
 }
-.winner-button{
-    display: none;
-}
-
 .winner  button{
     background-color: #2196f3;
     color: #fff;
@@ -127,15 +122,26 @@ body{
     margin-top: 30px;
 }
 @media  (max-width:767px){
+    .winner  button{
+        padding: 8px 10px;
+        font-size: 15px;
+    }
     .info-container{
         width: 100%;
+        margin: 10px auto;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between ;
     }
     .memory-game-blocks{
         width: 100%;
     }
-    .game-block{
+    .memory-game-blocks .game-block{
         width: 100px;
         height: 100px;
+        flex: none;
+        margin: 10px auto;
+
     }
     .game-block .face{
         height: 100px;
