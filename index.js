@@ -13,7 +13,9 @@ let duration = 1000;
 
 
 winnerBtn.onclick = function(){
+    
     location.reload();
+   
 }
 startBtn.onclick = function(){
     let yourName = prompt("What`s Your Name ? ");
@@ -97,6 +99,8 @@ function checkMatchedBlock(firstBlock , secondBlock){
         // Add Class Match
         firstBlock.classList.add('has-match');
         secondBlock.classList.add('has-match');
+        
+        document.getElementById("success").play();
     }
     else{
         triesElement.innerHTML = parseInt(triesElement.innerHTML)+1;
@@ -105,6 +109,9 @@ function checkMatchedBlock(firstBlock , secondBlock){
             firstBlock.classList.remove('is-flipped');
             secondBlock.classList.remove('is-flipped');
         }, duration);
+
+        document.getElementById("fail").play();
+
     }
     
    
